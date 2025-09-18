@@ -8,22 +8,24 @@
     <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
   <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
     <li class="nav-item mx-4">
-      <a class="nav-link noto-primary active" aria-current="page" href="#">Home</a>
+      <a class="nav-link noto-primary active" aria-current="page" href="/">Home</a>
     </li>
     <li class="nav-item mx-4">
-      <a class="nav-link noto-primary" href="#">About</a>
+      <a class="nav-link noto-primary" href="/about">About</a>
     </li>
     <li class="nav-item mx-4">
-      <a class="nav-link noto-primary" href="#">Accreditations</a>
+      <a class="nav-link noto-primary" href="/accreditations">Accreditations</a>
     </li>
     <li class="nav-item mx-4">
-      <a class="nav-link noto-primary" href="#">Projects</a>
+      <a class="nav-link noto-primary" href="/projects">Projects</a>
     </li>
   </ul>
 </div>
-<button class="contact noto-primary">
+<a href="/contact">
+  <button class="contact noto-primary">
   GET IN TOUCH
 </button>
+</a>
 
   </div>
 </nav>

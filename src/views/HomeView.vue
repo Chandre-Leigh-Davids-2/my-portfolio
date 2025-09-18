@@ -7,8 +7,13 @@
           <h1 class="mont-primary mb-5">Hi there!<br>I am <span class="accent">Chandré Leigh Davids</span>.</h1>
           <p class="mb-5 noto-primary home-paragraph" style="font-weight: 300;">I'm a full-stack developer who builds more than just websites, I craft digital&nbsp;experiences. Whether it's a sleek landing page or a complex web&nbsp;app, I bring together design and code to create products that make&nbsp;an&nbsp;impact.</p>
           <div class="d-flex">
-            <button class="button learn-more" style="margin-right: 10px;">LEARN MORE</button>
-            <button class="button view-cv">VIEW MY CV</button>
+            <a href="/about">
+              <button class="button learn-more" style="margin-right: 10px;">LEARN MORE</button>
+            </a>
+            <!-- Host PDF on Git Hub Pages (Reminder) -->
+            <a href="" target="_blank">
+              <button class="button view-cv">VIEW MY CV</button>
+            </a>
           </div>
         </div>
         <div class="col-md-5 d-flex justify-content-end align-content-start" style="padding-right: 3rem!important;">
