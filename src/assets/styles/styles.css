@@ -70,7 +70,7 @@ button.contact{
   white-space: nowrap;
   padding: 0.8vw 3vw;
   border-radius: 10px;
-  border: 3px solid var(--button-secondary-color);
+  border: 3px solid var(--button-color);
   background-color: var(--button-color);
 }
 /* Footer */
@@ -118,10 +118,31 @@ ul li{
     border-radius: 10px;
 }
 button.learn-more{
-    padding: 10px 30px;
-    border-radius: 10px;
+    border: 3px solid var(--button-color);
+    background-color: var(--button-color);
+    color: var(--text-color);
 }
-button.learn-more{
-    padding: 10px 30px;
-    border-radius: 10px;
+button.view-cv{
+    border: 3px solid var(--button-secondary-color);
+    background-color: var(--button-secondary-color);
+    color: var(--text-color);
+}
+button.learn-more:hover{
+    border: 3px solid var(--button-secondary-color);
+    background-color: var(--button-secondary-color);
+    color: var(--text-color);
+    transition: 0.18s ease-in-out;
+}
+button.view-cv:hover{
+    border: 3px solid var(--button-color);    
+    background-color: var(--button-color);
+    color: var(--text-color);
+    transition: 0.18s ease-in-out;
+}
+.home-image{
+    width: 80%;
+    height: auto;
+}
+.home-paragraph{
+    width: 70%;
 }
