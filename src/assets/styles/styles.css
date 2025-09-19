@@ -143,7 +143,7 @@ button.view-cv:hover{
     background-color: var(--button-color);
     color: var(--text-color);
     transition: 0.18s ease-in-out;
-}
+}   
 .home-image{
     width: 80%;
     height: auto;
@@ -159,4 +159,78 @@ button.view-cv:hover{
 .about-page-secondary{
     background-image: var(--text-color) ;
     min-height: 50vh;
+}
+/* Grid for responsiveness */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .timeline-grid {
+    grid-template-columns: 1fr; /* stack on small screens */
+  }
+}
+
+/* Column styling */
+.timeline-column {
+  position: relative;
+  padding-left: 2rem;
+}
+/* Timeline item container */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1rem; /* space for the circle */
+}
+/* Marker (circle) */
+.timeline-marker {
+  width: 14px;
+  height: 14px;
+  background: #6b7280; /* gray-500 */
+  border: 2px solid #fff;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 0.5rem; /* align with content */
+  position: relative;
+  left: -10px;
+  top: -20px;
+}
+/* Make the circle vertically centered with the line */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 0.7rem; /* same as column line position */
+  width: 2px;
+  height: 75%;
+  background: #d1d5db; /* gray-300 */
+  z-index: -1; /* behind the marker and content */
+}
+/* Job content box */
+.timeline-content {
+  background: #fff;
+  border: 1px solid #e5e7eb; /* gray-200 */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-left: 1rem;
+  width: 100%;
+}
+.timeline-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.timeline-content p {
+  color: #4b5563; /* gray-700 */
+  margin-bottom: 0.25rem;
+}
+
+.timeline-content span {
+  font-size: 0.85rem;
+  color: #6b7280; /* gray-500 */
 }
