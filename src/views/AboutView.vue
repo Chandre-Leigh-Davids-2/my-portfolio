@@ -74,13 +74,7 @@
         <div class="col p-5">
           <h1 class="mont-primary">Skills</h1>
           <div class="col pt-5">
-            <p class="noto-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque quaerat distinctio
-              explicabo ipsa modi ipsam sint laudantium dolorum cupiditate, est minima expedita quae unde ipsum harum
-              vel dolor. Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit delectus, laudantium
-              rerum voluptas vero voluptates nobis, vitae quae possimus suscipit quas veniam odit reiciendis vel,
-              necessitatibus in perspiciatis quisquam beatae? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quos beatae dolore aliquid, voluptate adipisci obcaecati nobis inventore esse consectetur, eaque vero
-              sapiente eius blanditiis atque eveniet, minima ipsum accusamus nam.</p>
+            <p class="noto-primary">Check the Figma Design for this please </p>
           </div>
         </div>
       </div>
