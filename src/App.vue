@@ -14,7 +14,25 @@ export default {
   components: {
     Navbar,
     Footer
-  }
+  },
+  
+   methods: {
+    setActiveLink() {
+      const currentUrl = window.location.href;
+      document.querySelectorAll('.nav-link').forEach(link => {
+        // clear old active states first
+        link.classList.remove('active');
+
+        // mark current link as active
+        if (link.href === currentUrl) {
+          link.classList.add('active');
+        }
+      });
+    }
+  },
+  mounted() {
+    this.setActiveLink(); // run once when component loads
+  },
 }
 
 

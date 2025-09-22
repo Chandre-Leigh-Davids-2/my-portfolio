@@ -83,6 +83,12 @@ button.contact {
   border: 3px solid var(--button-color);
   background-color: var(--button-color);
 }
+button.contact:hover {
+  border: 3px solid var(--button-secondary-color);
+  background-color: var(--button-secondary-color);
+  color: var(--text-color);
+  transition: 0.18s ease-in-out;
+}
 /* Footer */
 footer {
   background-color: var(--header-color);
@@ -238,8 +244,10 @@ button.view-cv:hover {
   color: #4b5563; /* gray-700 */
   margin-bottom: 0.25rem;
 }
-
 .timeline-content span {
   font-size: 0.85rem;
   color: #6b7280; /* gray-500 */
+}
+.skill img{
+    width: 50px;
 }
