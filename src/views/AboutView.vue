@@ -2,32 +2,25 @@
   <div class="container-fluid about-page-primary">
     <div class="" style="padding: 0vw 1vw;">
       <div class="row">
-        <div class="col p-5">
+        <div class="col-md-7 p-5">
           <h1 class="mont-primary">About Me</h1>
-          <div class="col pt-5">
-            <p class="noto-primary" style="font-weight: 300;">Hi, I’m Chandré Leigh Davids, a curious and driven
-              aspiring developer who loves turning ideas into real solutions. My fascination with technology began in
-              Grade 11, when I first experimented with Python and Arduino, discovering how creativity and code could
-              bring projects to life. During matric, I came across Life Choices Academy, and after completing school, I
-              fully committed to the program, gaining hands-on experience in web development, software, and
-              collaborative projects through an internship at Life Choices Studio. These experiences taught me not only
-              technical skills but also the value of teamwork, adaptability, and problem-solving. I am passionate about
-              building meaningful digital solutions and constantly exploring new technologies, with the goal of growing
-              into a versatile developer who creates work that leaves a lasting impact.</p>
-
-          </div>
-          <div class="py-5 d-flex justify-content-start">
-            <!-- Host On Github pages -->
-            <button class="button view-cv" style="margin-right: 10px;"><a href="" target="_blank">VIEW MY
-                CV</a></button>
-            <button class="button learn-more">
-              <a href="https://www.linkedin.com/in/chandre-leigh-davids/" target="_blank">
-                LEARN MORE
-              </a>
-            </button>
-
+          <div class="pt-5">
+            <p class="noto-primary" style="font-weight: 300;">Hi, I’m Chandré Leigh Davids, an enthusiastic and motivated aspiring developer with a strong passion for technology, creativity, and problem-solving. My journey into tech began in Grade 11, when I was introduced to coding and robotics through Python and Arduino projects. That experience sparked my curiosity about building real solutions with code. In my matric year, I discovered Life Choices Academy, and after finishing school I joined the program, where I deepened my knowledge and later gained hands-on experience during an internship with Life Choices Studio. <br><br>There, I worked on projects in web development, WordPress, and software development, which gave me a solid foundation in both technical and collaborative skills. These experiences sharpened my adaptability and problem-solving mindset, and fueled my passion for creating clean, impactful digital solutions. My goal is to grow into a versatile developer who contributes to meaningful projects while continuously learning and evolving.</p>
+            <div class="py-5 d-flex justify-content-start">
+              <!-- Host On Github pages -->
+              <button class="button view-cv" style="margin-right: 10px;"><a href="" target="_blank">VIEW MY
+                  CV</a></button>
+              <button class="button learn-more">
+                <a href="https://www.linkedin.com/in/chandre-leigh-davids/" target="_blank">
+                  LEARN MORE
+                </a>
+              </button>
+            </div>
           </div>
         </div>
+          <div class="col-md-5 d-flex justify-content-center align-content-center pt-5">
+            <img src="../assets/images/image-of-self.png" alt="" class="about-image">
+          </div>
       </div>
     </div>
   </div>
@@ -73,8 +66,10 @@
       <div class="row">
         <div class="col p-5">
           <h1 class="mont-primary">Skills</h1>
-          <div class="col pt-5">
-            <p class="noto-primary">Check the Figma Design for this please </p>
+          <div class="col pt-5 d-flex">
+            <div class="skill">
+              <img src="../assets/images/linkedin.png" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -94,6 +89,23 @@ export default {
         { title: "Intern", description: "Assisted with bug fixes and testing.", year: "2020" },
       ]
     };
+  },
+   methods: {
+    setActiveLink() {
+      const currentUrl = window.location.href;
+      document.querySelectorAll('.nav-link').forEach(link => {
+        // clear old active states first
+        link.classList.remove('active');
+
+        // mark current link as active
+        if (link.href === currentUrl) {
+          link.classList.add('active');
+        }
+      });
+    }
+  },
+  mounted() {
+    this.setActiveLink(); // run once when component loads
   },
   computed: {
     leftJobs() {
