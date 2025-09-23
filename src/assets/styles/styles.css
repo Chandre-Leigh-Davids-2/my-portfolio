@@ -89,6 +89,11 @@ button.contact:hover {
   color: var(--text-color);
   transition: 0.18s ease-in-out;
 }
+@media screen and (max-width: 768px) {
+  button.contact {
+    display: none;
+  }
+}
 /* Footer */
 footer {
   background-color: var(--header-color);
@@ -157,7 +162,6 @@ button.view-cv:hover {
 }
 .home-image {
   width: 80%;
-  height: auto;
 }
 .home-paragraph {
   width: 70%;
@@ -248,6 +252,96 @@ button.view-cv:hover {
   font-size: 0.85rem;
   color: #6b7280; /* gray-500 */
 }
-.skill img{
-    width: 50px;
+.skill {
+  width: 8vw;
+  margin: 2vw;
+  border-radius: 25px;
+  grid-template-columns: 1fr 6;
+}
+.skill:hover {
+  background-color: var(--accent-color);
+  transition: 0.18s ease-in-out;
+  scale: 1.2;
+}
+.skill img {
+  width: 100%;
+}
+.glass {
+  background-color: #ffffff30;
+  border-radius: 20px;
+  padding: 50px;
+  display: grid !important;
+  grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+  gap: 20px; /* spacing between blocks */
+  justify-items: center; /* centers content inside grid cells */
+}
+@media screen and (max-width: 768px) {
+  .glass {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .skill {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .glass {
+    padding: 25px !important;
+  }
+}
+/* Projects */
+
+.portfolio button {
+  text-transform: capitalize;
+}
+
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  border-top: 1px solid #e5b80b;
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-box .portfolio-info {
+  background-color: #e5b80b;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.portfolio-box .portfolio-info .caption {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.portfolio-box .portfolio-info .caption h4 {
+  text-transform: uppercase;
+  display: block;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.5);
+  transition-duration: 1s;
+  transition-property: all;
+}
+
+.portfolio-box:hover .portfolio-info {
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 1s;
+  transition-property: all;
 }

@@ -1,11 +1,11 @@
 <template>
   <div class="container-fluid about-page-primary">
-    <div class="" style="padding: 0vw 1vw;">
+    <div style="padding: 0vw 1vw;">
       <div class="row">
         <div class="col-md-7 p-5">
           <h1 class="mont-primary">About Me</h1>
           <div class="pt-5">
-            <p class="noto-primary" style="font-weight: 300;">Hi!, I'm Chandré Leigh Davids, an enthusiastic and
+            <p class="noto-primary" style="font-weight: 300;">Hi There! I'm Chandré Leigh Davids, an enthusiastic and
               motivated aspiring developer with a strong passion for technology, creativity, and problem-solving. My
               journey into tech began in Grade 11, when I was introduced to coding and robotics through Python and
               Arduino projects. That experience sparked my curiosity about building real solutions with code. In my
@@ -74,9 +74,9 @@
   <div class="container-fluid about-page-primary">
     <div class="" style="padding: 0vw 1vw;">
       <div class="row">
-        <div class="col p-5">
+        <div class="col-outer p-5">
           <h1 class="mont-primary">Skills</h1>
-          <div class="col pt-5 d-flex flex-wrap">
+          <div class="col pt-5 d-flex flex-wrap justify-content-center glass">
             <div v-for="(skill, index) in skills" :key="index" class="skill col-md-2 mb-3">
               <img :src="skill.img" :alt="skill.name">
             </div>
@@ -89,24 +89,39 @@
 
 <script>
 import linkedIn from '../assets/images/linkedin.png'
+import gitHub from '../assets/images/GitHub.png'
+
 export default {
   name: "JobTimeline",
   data() {
     return {
       jobs: [
-        { title: "Frontend Developer", description: "Worked on UI/UX components.", year: "2023" },
-        { title: "Backend Developer", description: "Built REST APIs with Node.js.", year: "2022" },
-        { title: "Fullstack Developer", description: "Developed eCommerce platform.", year: "2021" },
-        { title: "Intern", description: "Assisted with bug fixes and testing.", year: "2020" },
+        { title: "Full Stack Developer", description: "I did a 6 month bootcamp with Life Choices academy where I learnt the basics of web development.", year: "Apr 2024 - Sep 2024" },
+        { title: "Mondale High School", description: "I studied at Mondale High School, completed my year matric year with a bachelors pass", year: "2019-2023" },
+        { title: "Web Developer", description: "Developed eCommerce platform.", year: "2021" },
+        { title: "Software Developer", description: "Assisted with bug fixes and testing.", year: "2020" },
+        { title: "Wordpress Developer", description: "Assisted with bug fixes and testing.", year: "2020" },
+        { title: "Entrepreneur", description: "Assisted with bug fixes and testing.", year: "2020" }
       ],
        skills: [
         { name: "LinkedIn", img: linkedIn },
-        { name: "GitHub", img: linkedIn },
+        { name: "GitHub", img: gitHub },
         { name: "Vue", img: linkedIn },
         { name: "JavaScript", img: linkedIn },
         { name: "HTML", img: linkedIn },
         { name: "CSS", img: linkedIn },
         { name: "WordPress", img: linkedIn },
+        { name: "WordPress", img: linkedIn },
+        { name: "WordPress", img: linkedIn },
+        { name: "WordPress", img: linkedIn },
+        { name: "WordPress", img: linkedIn },
+        { name: "WordPress", img: linkedIn },
+        { name: "WordPress", img: linkedIn },
+        { name: "WordPress", img: linkedIn },
+        { name: "WordPress", img: linkedIn },
+        { name: "WordPress", img: linkedIn },
+        { name: "WordPress", img: linkedIn },
+        { name: "WordPress", img: linkedIn }
         // ➝ Add as many as you want here
       ]
     };
@@ -117,13 +132,7 @@ export default {
     },
     rightJobs() {
       return this.jobs.filter((_, i) => i % 2 !== 0); // odd index jobs
-    },
-    getSkills(){
-      return this.skills
     }
-  },
-  mounted() {
-    this.getSkills();
   }
 };
 </script>
