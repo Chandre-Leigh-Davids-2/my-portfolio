@@ -25,6 +25,7 @@
                     <h3>{{ job.title }}</h3>
                     <p>{{ job.description }}</p>
                     <span>{{ job.year }}</span>
+                    <!-- Make sure to do queries please -->
                   </div>
                 </div>
               </div>
