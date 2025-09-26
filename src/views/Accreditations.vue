@@ -6,26 +6,35 @@
           <h1 class="mont-primary">My Certifications</h1>
           <div class="col pt-5">
             <!-- Education and Experience Blocks -->
-            <div class="timeline-grid">
+            <div class="accreditations-grid">
               <!-- LEFT COLUMN -->
-              <div class="timeline-column">
-                <div v-for="(job, index) in leftJobs" :key="'left-' + index" class="timeline-item">
-                  <div class="timeline-content">
-                    <h3>{{ job.title }}</h3>
-                    <p>{{ job.description }}</p>
-                    <span>{{ job.year }}</span>
+              <div class="accreditations-column">
+                <div v-for="(job, index) in leftJobs" :key="'left-' + index" class="accreditations-item">
+                  <div class="accreditations-content d-flex align-content-center">
+                    <div class="badge">
+                      <img src="../assets/images/linkedin.png" alt="">
+                    </div>
+                    <div>
+                      <h3>{{ job.title }}</h3>
+                      <p>{{ job.description }}</p>
+                      <span>{{ job.year }}</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <!-- RIGHT COLUMN -->
-              <div class="timeline-column">
-                <div v-for="(job, index) in rightJobs" :key="'right-' + index" class="timeline-item">
-                  <div class="timeline-content">
-                    <h3>{{ job.title }}</h3>
-                    <p>{{ job.description }}</p>
-                    <span>{{ job.year }}</span>
-                    <!-- Make sure to do queries please mobile first  please-->
+              <div class="accreditations-column">
+                <div v-for="(job, index) in rightJobs" :key="'right-' + index" class="accreditations-item">
+                  <div class="accreditations-content d-flex ">
+                    <div class="badge">
+                      <img src="../assets/images/linkedin.png" alt="">
+                    </div>
+                    <div>
+                      <h3>{{ job.title }}</h3>
+                      <p>{{ job.description }}</p>
+                      <span>{{ job.year }}</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -40,7 +49,7 @@
 <script>
 
 export default {
-  name: "JobTimeline",
+  name: "Job",
   data() {
     return {
       jobs: [
