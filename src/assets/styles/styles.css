@@ -364,11 +364,9 @@ button.view-cv:hover {
   color: #6b7280; /* gray-500 */
 }
 /* Projects */
-
 .portfolio button {
   text-transform: capitalize;
 }
-
 .portfolio-box {
   position: relative;
   width: 100%;
@@ -377,12 +375,10 @@ button.view-cv:hover {
   margin-bottom: 1.2rem;
   border-top: 1px solid #e5b80b;
 }
-
 .portfolio-box img {
   width: 100%;
   height: 100%;
 }
-
 .portfolio-box .portfolio-info {
   background-color: #e5b80b;
   width: 100%;
@@ -393,7 +389,6 @@ button.view-cv:hover {
   opacity: 0;
   visibility: hidden;
 }
-
 .portfolio-box .portfolio-info .caption {
   text-align: center;
   color: #fff;
@@ -402,22 +397,31 @@ button.view-cv:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .portfolio-box .portfolio-info .caption h4 {
   text-transform: uppercase;
   display: block;
 }
-
 .portfolio-box:hover img {
   transform: scale(1.5);
   transition-duration: 1s;
   transition-property: all;
 }
-
 .portfolio-box:hover .portfolio-info {
   opacity: 1;
   visibility: visible;
   transition-duration: 1s;
   transition-property: all;
 }
-
+/* Contact */
+/* .contact-img-div img{
+  width: 100%;
+} */
+.contact-img-div{
+  background: var(--text-color);
+  min-height: 80vh;
+}
+.line{
+  width: 60%;
+  background-color: var(--secondary-accent-color);
+  height: 2px;
+}
