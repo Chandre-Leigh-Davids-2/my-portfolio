@@ -4,14 +4,13 @@
 
 /* Universal Styles */
 :root {
-  --header-color: #024089;
-  --footer-color: #024089;
+  --header-footer-color: #024089;
   --accent-color: #f9841a;
   --secondary-accent-color: #fec619;
   --text-color: #ffffff;
   --secondary-text-color: #0e2837;
-  --button-color: #f9841a;
-  --button-secondary-color: #fec619;
+  --alternative-text-color: #355275;
+  --link-color: #169BE5;
 }
 .coiny {
   font-family: "Coiny", system-ui;
@@ -50,7 +49,7 @@ a {
 }
 /* Header */
 nav {
-  background-color: var(--header-color);
+  background-color: var(--header-footer-color);
   padding: 13px 3vw !important;
   height: 100px;
 }
@@ -80,12 +79,12 @@ button.contact {
   white-space: nowrap;
   padding: 0.8vw 3vw;
   border-radius: 10px;
-  border: 3px solid var(--button-color);
-  background-color: var(--button-color);
+  border: 3px solid var(--accent-color);
+  background-color: var(--accent-color);
 }
 button.contact:hover {
-  border: 3px solid var(--button-secondary-color);
-  background-color: var(--button-secondary-color);
+  border: 3px solid var(--secondary-accent-color);
+  background-color: var(--secondary-accent-color);
   color: var(--text-color);
   transition: 0.18s ease-in-out;
 }
@@ -96,7 +95,7 @@ button.contact:hover {
 }
 /* Footer */
 footer {
-  background-color: var(--header-color);
+  background-color: var(--header-footer-color);
   padding: 13px 3vw !important;
 }
 .find-me-on {
@@ -139,24 +138,24 @@ ul li {
   border-radius: 10px;
 }
 button.learn-more {
-  border: 3px solid var(--button-color);
-  background-color: var(--button-color);
+  border: 3px solid var(--accent-color);
+  background-color: var(--accent-color);
   color: var(--text-color);
 }
 button.view-cv {
-  border: 3px solid var(--button-secondary-color);
-  background-color: var(--button-secondary-color);
+  border: 3px solid var(--secondary-accent-color);
+  background-color: var(--secondary-accent-color);
   color: var(--text-color);
 }
 button.learn-more:hover {
-  border: 3px solid var(--button-secondary-color);
-  background-color: var(--button-secondary-color);
+  border: 3px solid var(--secondary-accent-color);
+  background-color: var(--secondary-accent-color);
   color: var(--text-color);
   transition: 0.18s ease-in-out;
 }
 button.view-cv:hover {
-  border: 3px solid var(--button-color);
-  background-color: var(--button-color);
+  border: 3px solid var(--accent-color);
+  background-color: var(--accent-color);
   color: var(--text-color);
   transition: 0.18s ease-in-out;
 }
@@ -176,8 +175,13 @@ button.view-cv:hover {
   min-height: 50vh;
 }
 .about-image {
-  width: 60%;
-  height: 85%;
+  width: 25vw; /* Example fixed width */
+  height: auto; /* Example fixed height */
+}
+.about-image img{
+    max-width: 100%; /* Ensures the image scales down within its container */
+  height: auto;    /* Maintains the aspect ratio by adjusting height proportionally */
+  display: block;
 }
 /* Grid for responsiveness */
 .timeline-grid {
@@ -306,15 +310,13 @@ button.view-cv:hover {
 /* Column styling */
 .accreditations-column {
   position: relative;
-  padding-left: 2rem;
 }
-/* accreditations item container */
+/* Timeline item container */
 .accreditations-item {
   display: flex;
   align-items: flex-start;
   position: relative;
   margin-bottom: 2rem;
-  padding-left: 1rem; /* space for the circle */
 }
 /* Marker (circle) */
 .accreditations-marker {
@@ -329,17 +331,6 @@ button.view-cv:hover {
   left: -10px;
   top: -20px;
 }
-/* Make the circle vertically centered with the line */
-.accreditations-item::before {
-  content: "";
-  position: absolute;
-  top: 23px;
-  left: 0.7rem; /* same as column line position */
-  width: 2px;
-  height: 75%;
-  background: #d1d5db; /* gray-300 */
-  z-index: -1; /* behind the marker and content */
-}
 /* Job content box */
 .accreditations-content {
   background: #fff;
@@ -347,7 +338,6 @@ button.view-cv:hover {
   border-radius: 0.5rem;
   padding: 1rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  margin-left: 1rem;
   width: 100%;
 }
 .accreditations-content h3 {
@@ -362,6 +352,23 @@ button.view-cv:hover {
 .accreditations-content span {
   font-size: 0.85rem;
   color: #6b7280; /* gray-500 */
+}
+.badge{
+    width: 70px;
+    align-self: center !important;
+}
+.badge img{
+  width: 100%;
+  height: 100%;
+}
+.box{
+  margin-left: 1rem;
+}
+a.link{
+  color: var(--link-color);
+}
+span.capabilities {
+    margin-right: 10px !important;
 }
 /* Projects */
 .portfolio button {

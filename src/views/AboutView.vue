@@ -2,7 +2,7 @@
   <div class="container-fluid about-page-primary">
     <div style="padding: 0vw 1vw;">
       <div class="row">
-        <div class="col-md-7 p-5">
+        <div class="col-lg-7 p-5">
           <h1 class="mont-primary">About Me</h1>
           <div class="pt-5">
             <p class="noto-primary" style="font-weight: 300;">Hi There! I'm Chandré Leigh Davids, an enthusiastic and
@@ -16,10 +16,12 @@
               and problem-solving mindset, and fueled my passion for creating clean, impactful digital solutions. My
               goal is to grow into a versatile developer who contributes to meaningful projects while continuously
               learning and evolving.</p>
-            <div class="py-5 d-flex justify-content-start">
+            <div class="py-5 justify-content-start">
               <!-- Host On Github pages -->
-              <button class="button view-cv" style="margin-right: 10px;"><a href="" target="_blank">VIEW MY
-                  CV</a></button>
+              <button class="button view-cv" style="margin-right: 10px;">
+                <a href="" target="_blank">VIEW MY
+                  CV</a>
+                </button>
               <button class="button learn-more">
                 <a href="https://www.linkedin.com/in/chandre-leigh-davids/" target="_blank">
                   LEARN MORE
@@ -28,8 +30,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5 d-flex justify-content-center align-content-center pt-5">
-          <img src="../assets/images/image-of-self.png" alt="" class="about-image">
+        <div class="col-lg-5 pt-5 d-none d-lg-flex align-content-center justify-content-center">
+          <div class="about-image">
+          <img src="../assets/images/image-of-self.png" alt="">
+          </div>
         </div>
       </div>
     </div>
