@@ -12,9 +12,30 @@
           <div class="col-md-6">
             <h3>Reach Out Anytime</h3>
             <div class="line"></div>
+            <ul>
+              <li><span><img src="" alt=""></span>text</li>
+              <li><span><img src="" alt=""></span>text</li>
+              <li><span><img src="" alt=""></span>text</li>
+            </ul>
           </div>
           <!-- Use Free Form for this -->
-          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <form action="" method="POST">
+              <div class="display flex">
+                <label for="name">
+                  <input type="text" name="" id="">
+                </label>
+                <label for="surname">
+                  <input type="text" name="" id="">
+                </label>
+              </div>
+              <label for="">
+                <input type="text">
+              </label>
+              <textarea name="message" id=""></textarea>
+              <input type="submit" value="SEND MESSAGE">
+            </form>
+          </div>
         </div>
       </div>
     </div>

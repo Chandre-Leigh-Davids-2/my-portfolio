@@ -11,7 +11,7 @@
               <button class="button learn-more" style="margin-right: 10px;">LEARN MORE</button>
             </a>
             <!-- Host PDF on Git Hub Pages (Reminder) -->
-            <a href="" target="_blank">
+            <a href="/files/chandre-leigh-davids-resume.pdf" target="_blank">
               <button class="button view-cv">VIEW MY CV</button>
             </a>
           </div>

@@ -5,7 +5,7 @@
         <div class="col-lg-7 p-5">
           <h1 class="mont-primary">About Me</h1>
           <div class="pt-5">
-            <p class="noto-primary" style="font-weight: 300;">Hi There! I'm Chandré Leigh Davids, an enthusiastic and
+            <p class="noto-primary" style="font-weight: 300;">I am Chandré Leigh Davids, an enthusiastic and
               motivated aspiring developer with a strong passion for technology, creativity, and problem-solving. My
               journey into tech began in Grade 11, when I was introduced to coding and robotics through Python and
               Arduino projects. That experience sparked my curiosity about building real solutions with code. In my
@@ -15,24 +15,22 @@
               a solid foundation in both technical and collaborative skills. These experiences sharpened my adaptability
               and problem-solving mindset, and fueled my passion for creating clean, impactful digital solutions. My
               goal is to grow into a versatile developer who contributes to meaningful projects while continuously
-              learning and evolving.</p>
+              learning and evolving.
+            </p>
             <div class="py-5 justify-content-start">
               <!-- Host On Github pages -->
-              <button class="button view-cv" style="margin-right: 10px;">
-                <a href="" target="_blank">VIEW MY
-                  CV</a>
-                </button>
-              <button class="button learn-more">
-                <a href="https://www.linkedin.com/in/chandre-leigh-davids/" target="_blank">
-                  LEARN MORE
-                </a>
-              </button>
+              <a href="/files/chandre-leigh-davids-resume.pdf" target="_blank" style="margin-right: 10px;">
+                <button class="button view-cv">VIEW MY CV</button>
+              </a>
+              <a href="https://www.linkedin.com/in/chandre-leigh-davids/" target="_blank">
+                <button class="button learn-more">LEARN MORE</button>
+              </a>
             </div>
           </div>
         </div>
         <div class="col-lg-5 pt-5 d-none d-lg-flex align-content-center justify-content-center">
           <div class="about-image">
-          <img src="../assets/images/image-of-self.png" alt="">
+            <img src="../assets/images/image-of-self.png" alt="">
           </div>
         </div>
       </div>
@@ -107,7 +105,7 @@ export default {
         { title: "Wordpress Developer", description: "Assisted with bug fixes and testing.", year: "2020" },
         { title: "Entrepreneur", description: "Assisted with bug fixes and testing.", year: "2020" }
       ],
-       skills: [
+      skills: [
         { name: "LinkedIn", img: linkedIn },
         { name: "GitHub", img: gitHub },
         { name: "Vue", img: linkedIn },
