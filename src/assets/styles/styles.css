@@ -375,53 +375,58 @@ span.capabilities {
     margin-right: 10px !important;
 }
 .badge-container {
+  background-color: #ffffff30;
+  position: relative;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #0d47a1;
   padding: 1rem;
-  border-radius: 10px;
+  margin-top: 3rem;
 }
-
 .inside-container {
   display: flex;
   align-items: center;
+  padding: 10px;
+  min-height: 40vh;
 }
-
 .prev,
 .next {
   font-size: 2rem;
   color: white;
   cursor: pointer;
   padding: 0 1rem;
+  position: absolute;
 }
-
+.prev{
+  left: 40px;
+}
+.next{
+  right: 40px;
+}
 .badges {
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
   justify-content: center;
   align-items: center;
 }
-
 .badge-item {
-  width: 100px;
-  height: 100px;
+  width: 280px;
+  height: 250px;
   background: #dcdcdc;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .image-container img {
-  width: 80%;
+  width: 90% !important;
   height: auto;
+  margin: auto !important;
 }
-
 .position {
   margin-top: 1rem;
 }
-
 .position span {
   display: inline-block;
   width: 10px;
@@ -431,7 +436,6 @@ span.capabilities {
   border-radius: 50%;
   cursor: pointer;
 }
-
 .position .active {
   background: white;
 }

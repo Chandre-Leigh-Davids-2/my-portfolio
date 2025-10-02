@@ -60,7 +60,6 @@
             <div class="inside-container">
               <!-- Prev button -->
               <div class="prev" @click="prev">&#60;</div>
-
               <!-- Badge items -->
               <div class="badges">
                 <div v-for="(badge, index) in visibleBadges" :key="index" class="badge-item">
@@ -69,7 +68,6 @@
                   </span>
                 </div>
               </div>
-
               <!-- Next button -->
               <div class="next" @click="next">&#62;</div>
             </div>
@@ -118,7 +116,6 @@ export default {
         { image: next },
         { image: verify },
         { image: next },
-        { image: verify },
         { image: verify }
       ],
       currentPage: 0,
