@@ -19,7 +19,7 @@
             </ul>
           </div>
           <!-- Use Free Form for this -->
-           <!-- Redo form please -->
+           <!-- Redo form and styles please -->
           <div class="col-md-6">
             <form action="" method="POST">
               <div class="display flex">
