@@ -10,7 +10,7 @@
   --text-color: #ffffff;
   --secondary-text-color: #0e2837;
   --alternative-text-color: #355275;
-  --link-color: #169BE5;
+  --link-color: #169be5;
 }
 .coiny {
   font-family: "Coiny", system-ui;
@@ -47,9 +47,14 @@ a {
   text-decoration: none;
   color: var(--text-color);
 }
-ul li:hover{
+ul li:hover {
   scale: 1.15;
   transition: 0.18s ease-in-out;
+}
+.button {
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: var(--text-color);
 }
 /* Header */
 nav {
@@ -76,7 +81,6 @@ nav {
   color: var(--text-color) !important;
   font-weight: bolder !important;
 }
-
 button.contact {
   font-optical-sizing: auto;
   font-weight: 300;
@@ -137,10 +141,6 @@ ul li {
 .body-padding {
   padding: 10vh 1vw !important;
 }
-.button {
-  padding: 10px 30px;
-  border-radius: 10px;
-}
 button.learn-more {
   border: 3px solid var(--accent-color);
   background-color: var(--accent-color);
@@ -154,13 +154,11 @@ button.view-cv {
 button.learn-more:hover {
   border: 3px solid var(--secondary-accent-color);
   background-color: var(--secondary-accent-color);
-  color: var(--text-color);
   transition: 0.18s ease-in-out;
 }
 button.view-cv:hover {
   border: 3px solid var(--accent-color);
   background-color: var(--accent-color);
-  color: var(--text-color);
   transition: 0.18s ease-in-out;
 }
 .home-image {
@@ -182,9 +180,9 @@ button.view-cv:hover {
   width: 25vw; /* Example fixed width */
   height: auto; /* Example fixed height */
 }
-.about-image img{
-    max-width: 100%; /* Ensures the image scales down within its container */
-  height: auto;    /* Maintains the aspect ratio by adjusting height proportionally */
+.about-image img {
+  max-width: 100%; /* Ensures the image scales down within its container */
+  height: auto; /* Maintains the aspect ratio by adjusting height proportionally */
   display: block;
 }
 /* Grid for responsiveness */
@@ -241,7 +239,7 @@ button.view-cv:hover {
 .timeline-content {
   background: #fff;
   border: 1px solid #e5e7eb; /* gray-200 */
-  border-radius: 0.5rem;
+  border-radius: 0.5rem;transition: 0.18s ease-in-out;
   padding: 1rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   margin-left: 1rem;
@@ -357,22 +355,22 @@ button.view-cv:hover {
   font-size: 0.85rem;
   color: #6b7280; /* gray-500 */
 }
-.badge{
-    width: 70px;
-    align-self: center !important;
+.badge {
+  width: 70px;
+  align-self: center !important;
 }
-.badge img{
+.badge img {
   width: 100%;
   height: 100%;
 }
-.box{
+.box {
   margin-left: 1rem;
 }
-a.link{
+a.link {
   color: var(--link-color);
 }
 span.capabilities {
-    margin-right: 10px !important;
+  margin-right: 10px !important;
 }
 .badge-container {
   background-color: #ffffff30;
@@ -392,35 +390,42 @@ span.capabilities {
 }
 .prev,
 .next {
-  font-size: 2rem;
+  font-size: 5rem;
   color: white;
   cursor: pointer;
   padding: 0 1rem;
   position: absolute;
 }
-.prev{
+.prev {
   left: 40px;
 }
-.next{
+.next {
   right: 40px;
 }
 .badges {
   display: flex;
-  gap: 4rem;
+  gap: 7rem;
   justify-content: center;
   align-items: center;
 }
 .badge-item {
-  width: 280px;
-  height: 250px;
+  width: 230px;
+  height: 220px;
   background: #dcdcdc;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.image-container {
+  width: 100% !important;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin: auto !important;
+}
 .image-container img {
-  width: 90% !important;
+  width: 85% !important;
   height: auto;
   margin: auto !important;
 }
@@ -431,13 +436,37 @@ span.capabilities {
   display: inline-block;
   width: 10px;
   height: 10px;
-  margin: 0 4px;
+  margin: 0 9px;
   background: #bbb;
   border-radius: 50%;
   cursor: pointer;
 }
 .position .active {
   background: white;
+}
+.end-container {
+  background-color: red;
+  width: 50%;
+  height: 250px;
+  margin-bottom: 3rem;
+  border-radius: 15px;
+  background-color: #ffffff30;
+}
+button.schedule,
+button.projects {
+  font-optical-sizing: auto;
+  font-weight: 300;
+  white-space: nowrap;
+  padding: 0.8vw 3vw;
+  border-radius: 10px;
+  border: 3px solid var(--accent-color);
+  background-color: var(--accent-color);
+}
+button.schedule:hover,
+button.projects:hover {
+  border: 3px solid var(--secondary-accent-color);
+  background-color: var(--secondary-accent-color);
+  transition: 0.18s ease-in-out;
 }
 /* Projects */
 .portfolio button {
@@ -492,11 +521,11 @@ span.capabilities {
 /* .contact-img-div img{
   width: 100%;
 } */
-.contact-img-div{
+.contact-img-div {
   background: var(--text-color);
   min-height: 80vh;
 }
-.line{
+.line {
   width: 60%;
   background-color: var(--secondary-accent-color);
   height: 2px;

@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid about-page-primary">
-    <div class="" style="padding: 0vw 1vw;">
+    <div style="padding: 0vw 1vw;">
       <div class="row">
         <div class="col p-5">
           <h1 class="mont-primary">My Certifications</h1>
@@ -79,12 +79,14 @@
             </div>
           </div>
         </div>
-        <div class="container p-5">
-          <h1 class="mont-primary text-center m-5">Ready To Collaborate?</h1>
-          <div class="d-flex justify-content-center">
-            <button class="button">SCHEDULE A CALL</button>
-            <button class="button">VIEW PROJECTS</button>
+        <div class="px-5 d-flex justify-content-center">
+         <div class="end-container">
+           <h3 class="mont-primary text-center m-5">Ready To Collaborate?</h3>
+          <div class="d-flex justify-content-center gap-4">
+            <button class="button schedule">SCHEDULE A CALL</button>
+            <button class="button projects">VIEW PROJECTS</button>
           </div>
+         </div>
         </div>
       </div>
     </div>
