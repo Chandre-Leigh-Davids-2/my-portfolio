@@ -468,55 +468,92 @@ button.projects:hover {
   background-color: var(--secondary-accent-color);
   transition: 0.18s ease-in-out;
 }
-/* Projects */
-.portfolio button {
-  text-transform: capitalize;
+/* Portfolio Section */
+.portfolio {
+  text-align: center;
+  padding: 3rem 0;
 }
-.portfolio-box {
+
+/* Heading */
+.portfolio h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #0d1b2a;
+  margin-bottom: 2rem;
+}
+
+/* Filter Buttons */
+.portfolio .btn {
+  border: none;
+  background: none;
+  font-weight: 500;
+  color: #333;
   position: relative;
-  width: 100%;
-  height: 18.5rem;
-  overflow: hidden;
-  margin-bottom: 1.2rem;
-  border-top: 1px solid #e5b80b;
 }
+
+.portfolio .btn:hover,
+.portfolio .btn.active {
+  color: #000;
+  border: 2px solid black;
+  border-radius: 0px 20px 0px 0px;
+}
+
+.filters::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+ .filters.active::after {
+  width: 100%;
+}
+
+/* Portfolio Grid */
+.portfolio .row {
+  justify-content: center;
+}
+
+.portfolio-box {
+  border: none;
+  margin-bottom: 1.5rem;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-box:hover {
+  transform: scale(1.03);
+}
+
+/* Images */
 .portfolio-box img {
   width: 100%;
-  height: 100%;
+  height: 250px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease, transform 0.8s ease;
 }
-.portfolio-box .portfolio-info {
-  background-color: #e5b80b;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-.portfolio-box .portfolio-info .caption {
-  text-align: center;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.portfolio-box .portfolio-info .caption h4 {
-  text-transform: uppercase;
-  display: block;
-}
+
 .portfolio-box:hover img {
-  transform: scale(1.5);
-  transition-duration: 1s;
-  transition-property: all;
+  filter: grayscale(0);
+  transform: scale(1.1);
 }
+
+/* Overlay Caption */
+.portfolio-box .portfolio-info {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
 .portfolio-box:hover .portfolio-info {
   opacity: 1;
-  visibility: visible;
-  transition-duration: 1s;
-  transition-property: all;
 }
+
 /* Contact */
 /* .contact-img-div img{
   width: 100%;
