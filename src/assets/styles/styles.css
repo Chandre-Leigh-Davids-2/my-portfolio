@@ -23,8 +23,8 @@
 }
 .mont-secondary {
   font-family: "Montserrat", sans-serif;
-  color: var(--secondary-text-color);
-  font-weight: 300;
+  color: var(--secondary-text-color) !important;
+  font-weight: 300 !important;
 }
 .noto-primary {
   color: var(--text-color);
@@ -38,7 +38,7 @@ p {
   font-size: 16px;
 }
 h1 {
-  font-size: 45px;
+  font-size: 45px !important;
 }
 .accent {
   color: var(--accent-color);
@@ -485,6 +485,8 @@ button.projects:hover {
 /* Filter Buttons */
 .portfolio .btn {
   border: none;
+  padding: 10px 30px;
+  min-width: 160px;
   background: none;
   font-weight: 500;
   color: #333;
@@ -494,25 +496,16 @@ button.projects:hover {
 .portfolio .btn:hover,
 .portfolio .btn.active {
   color: #000;
-  border: 2px solid black;
-  border-radius: 0px 20px 0px 0px;
+  border: 1px solid black;
+  border-bottom-style: none;
+  border-radius: 0px 20px 0px 0px !important;
 }
 
-.filters::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #007bff;
-  transition: all 0.3s ease;
+.filters{
+  border-bottom: 2px solid var(--secondary-text-color);
+  display: flex;
+  gap: 20px !important;
 }
-
- .filters.active::after {
-  width: 100%;
-}
-
 /* Portfolio Grid */
 .portfolio .row {
   justify-content: center;
@@ -561,6 +554,9 @@ button.projects:hover {
 .contact-img-div {
   background: var(--text-color);
   min-height: 80vh;
+}
+.contact-img-div img{
+  width: 100%;
 }
 .line {
   width: 60%;

@@ -6,7 +6,7 @@
           <section id="portfolio" class="portfolio">
             <div>
               <div class="row">
-                <h1 class="mont-secondary">Check Out Some of My Projects</h1>
+                <h1 class="mont-secondary text-start">Check Out Some of My Projects</h1>
               </div>
 
               <!-- FILTER BUTTONS -->
@@ -28,10 +28,24 @@
                   </button>
                   <button
                     class="mx-2 btn"
+                    :class="{ active: selectedCategory === 'wordpress' }"
+                    @click="filterPortfolio('wordpress')"
+                  >
+                    Wordpress
+                  </button>
+                  <button
+                    class="mx-2 btn"
                     :class="{ active: selectedCategory === 'application' }"
                     @click="filterPortfolio('application')"
                   >
                     Applications
+                  </button>
+                  <button
+                    class="mx-2 btn"
+                    :class="{ active: selectedCategory === 'designs' }"
+                    @click="filterPortfolio('designs')"
+                  >
+                    Designs
                   </button>
                   <button
                     class="mx-2 btn"
@@ -105,7 +119,7 @@ export default {
         },
         {
           title: "Wordpress",
-          category: "websites",
+          category: "wordpress",
           image: project1,
           url: "https://dev-ecommerce-giftedmoments.pantheonsite.io/",
         },
@@ -123,7 +137,7 @@ export default {
         },
         {
           title: "Wordpress",
-          category: "websites",
+          category: "wordpress",
           image: project1,
           url: "https://chandre.bigbeardbeta.co.za/",
         },
@@ -133,6 +147,12 @@ export default {
           image: project1,
           url: "https://sanrio-olive.vercel.app/",
         },
+        {
+          title: "design",
+          category: "designs",
+          image: project1,
+          url: "https://sanrio-olive.vercel.app/",
+        }
       ],
       selectedCategory: "all",
     };
