@@ -20,8 +20,6 @@
           </div>
           <!-- Use Free Form for this -->
            <!-- Redo form and styles please -->
-
-           <!-- Just a note to work on the pomodoro timer and to do list  -->
           <div class="col-md-6">
             <form action="" method="POST">
               <div class="display flex">
