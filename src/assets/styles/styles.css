@@ -607,7 +607,7 @@ span.contact-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px !important; /* adjust as needed */
+  width: 30px !important; /* adjust as needed */
   /* height: 24px; */
   margin-right: 10px;
   vertical-align: middle;
@@ -629,7 +629,7 @@ ul.contact-info {
 
 /* ===== Contact Form ===== */
 .contact-form {
-  background: #fcbf17;
+  background: var(--secondary-accent-color);
   border-radius: 15px;
   padding: 2rem;
 }
@@ -644,31 +644,26 @@ ul.contact-info {
   font-size: 1rem;
   margin-top: 10px;
 }
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #555;
-}
 label {
     display: block;
 }
 .contact-form textarea {
-  height: 250px;
+  height: 200px;
   width: 100% !important;
 }
 
 .send-btn {
-  background: #e78b00;
-  color: #fff;
+  background: var(--accent-color);
+  color: var(--text-color);
   border: none;
   border-radius: 8px;
   padding: 0.8rem 1.2rem;
   margin-top: 1rem;
   width: 100%;
   font-weight: 600;
-  transition: background 0.3s ease;
 }
 
 .send-btn:hover {
-  background: #d37b00;
+  scale: 1.05;
+  transition: 0.18s ease-in-out;
 }
