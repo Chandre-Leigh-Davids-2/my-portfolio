@@ -29,10 +29,12 @@
 .noto-primary {
   color: var(--text-color);
   font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300 !important;
 }
 .noto-secondary {
   color: var(--secondary-text-color);
   font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300 !important;
 }
 p {
   font-size: 16px;
@@ -50,6 +52,9 @@ a {
 footer ul li:hover {
   scale: 1.15;
   transition: 0.18s ease-in-out;
+}
+ul li{
+  list-style: none;
 }
 .button {
   padding: 10px 30px;
@@ -548,13 +553,10 @@ button.projects:hover {
 }
 
 /* Contact */
-/* .contact-img-div img{
-  width: 100%;
-} */
  /* edit */
 .contact-img-div {
   background: var(--text-color);
-  min-height: 80vh;
+  min-height: 60vh;
 }
 .contact-img-div img{
   width: 100%;
@@ -588,12 +590,41 @@ button.projects:hover {
   background: #e5b80b;
 }
 
-.contact-info li::marker{
- content: url(../images/badge.png);
-}
-
 .contact-info i {
   color: #e5b80b;
+}
+.contact-info{
+  padding: 0;
+}
+.contact-info li{
+  margin: 30px 0px;
+  color: var(--text-color);
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+}
+/* Correct selector: no space between span and .icon */
+span.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px !important; /* adjust as needed */
+  /* height: 24px; */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Style the image inside the contact-icon span */
+span.contact-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Optional: make the list cleaner */
+ul.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* ===== Contact Form ===== */
@@ -611,15 +642,19 @@ button.projects:hover {
   padding: 0.7rem;
   outline: none;
   font-size: 1rem;
+  margin-top: 10px;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #555;
 }
-
+label {
+    display: block;
+}
 .contact-form textarea {
-  height: 300px;
+  height: 250px;
+  width: 100% !important;
 }
 
 .send-btn {

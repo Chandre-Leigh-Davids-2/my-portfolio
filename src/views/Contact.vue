@@ -10,16 +10,16 @@
       <div class="col-md-9 p-5">
         <h1 class="mont-primary mb-4 text-white">Let’s Make Something Great!</h1>
 
-        <div class="row">
+        <div class="row mt-5">
           <!-- Contact Info -->
           <div class="col-md-6 text-white">
-            <h3>Reach Out Anytime</h3>
+            <h2 class="noto-primary">Reach Out Anytime</h2>
             <div class="contact-line mb-4"></div>
 
-            <ul class="contact-info">
-              <li><i class="bi bi-telephone-fill"></i> +27 73 325 3129</li>
-              <li><i class="bi bi-envelope-fill"></i> chandreleighdavids.17@gmail.com</li>
-              <li><i class="bi bi-geo-alt-fill"></i> Rocklands, Mitchell’s Plain, 7785</li>
+            <ul class="contact-info mt-5">
+              <li><span class="contact-icon"><img src="../assets/images/Call.png" alt="Call"></span> +27 73 325 3129</li>
+              <li><span class="contact-icon"><img src="../assets/images/Email.png" alt="Email"></span> chandreleighdavids.17@gmail.com</li>
+              <li><span class="contact-icon"><img src="../assets/images/location.png" alt="Location"></span> Rocklands, Mitchell’s Plain, 7785</li>
             </ul>
           </div>
 
