@@ -61,6 +61,7 @@ ul li{
   border-radius: 10px;
   color: var(--text-color);
 }
+/* ------------------------------------------------------------------------------------ */
 /* Header */
 nav {
   background-color: var(--header-footer-color);
@@ -106,6 +107,7 @@ button.contact:hover {
     display: none;
   }
 }
+/* ------------------------------------------------------------------------------------ */
 /* Footer */
 footer {
   background-color: var(--header-footer-color);
@@ -138,6 +140,7 @@ ul li {
   width: 40px;
   height: 40px;
 }
+/* ------------------------------------------------------------------------------------ */
 /* Home Page */
 .home-page {
   background-image: linear-gradient(#004699, #003b82, #001733);
@@ -172,6 +175,8 @@ button.view-cv:hover {
 .home-paragraph {
   width: 70%;
 }
+/* ------------------------------------------------------------------------------------ */
+
 /* About Page */
 .about-page-primary {
   background-image: linear-gradient(#004699, #003b82, #001733);
@@ -299,7 +304,7 @@ button.view-cv:hover {
     padding: 25px !important;
   }
 }
-
+/* ------------------------------------------------------------------------------------ */
 /* Accreditations */
 /* Grid for responsiveness */
 .accreditations-grid {
@@ -473,20 +478,15 @@ button.projects:hover {
   background-color: var(--secondary-accent-color);
   transition: 0.18s ease-in-out;
 }
-/* Portfolio Section */
-.portfolio {
-  text-align: center;
-  padding: 3rem 0;
-}
-
+/* ------------------------------------------------------------------------------------ */
+/* Projects Section */
 /* Heading */
 .portfolio h1 {
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 2rem;
   color: #0d1b2a;
   margin-bottom: 2rem;
 }
-
 /* Filter Buttons */
 .portfolio .btn {
   border: none;
@@ -505,7 +505,6 @@ button.projects:hover {
   border-bottom-style: none;
   border-radius: 0px 20px 0px 0px !important;
 }
-
 .filters{
   border-bottom: 2px solid var(--secondary-text-color);
   display: flex;
@@ -515,13 +514,11 @@ button.projects:hover {
 .portfolio .row {
   justify-content: center;
 }
-
 .portfolio-box {
   border: none;
   margin-bottom: 1.5rem;
   transition: transform 0.4s ease;
 }
-
 .portfolio-box:hover {
   transform: scale(1.03);
 }
@@ -546,12 +543,15 @@ button.projects:hover {
   color: #fff;
   opacity: 0;
   transition: opacity 0.5s ease;
+  text-align: center;
+  padding: 1rem 0;
+  height: 100%;
 }
 
 .portfolio-box:hover .portfolio-info {
   opacity: 1;
 }
-
+/* ------------------------------------------------------------------------------------ */
 /* Contact */
  /* edit */
 .contact-img-div {

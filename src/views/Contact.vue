@@ -17,7 +17,7 @@
             <div class="contact-line mb-4"></div>
 
             <ul class="contact-info mt-5">
-              <li><span class="contact-icon"><img src="../assets/images/Call.png" alt="Call"></span> +27 73 325 3129</li>
+              <li><span class="contact-icon"><img src="../assets/images/Call.png" alt="Call"></span><a href="tel:+27733253129">+27 73 325 3129</a></li>
               <li><span class="contact-icon"><img src="../assets/images/Email.png" alt="Email"></span> chandreleighdavids.17@gmail.com</li>
               <li><span class="contact-icon"><img src="../assets/images/location.png" alt="Location"></span> Rocklands, Mitchell’s Plain, 7785</li>
             </ul>
