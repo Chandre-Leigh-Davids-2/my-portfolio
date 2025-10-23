@@ -270,13 +270,12 @@ button.view-cv:hover {
   color: #6b7280; /* gray-500 */
 }
 .skill {
-  width: 8vw;
+  width: 7.5vw !important;
   margin: 2vw;
   border-radius: 25px;
   grid-template-columns: 1fr 6;
 }
 .skill:hover {
-  background-color: var(--accent-color);
   transition: 0.18s ease-in-out;
   scale: 1.2;
 }

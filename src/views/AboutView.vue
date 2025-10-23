@@ -46,7 +46,8 @@
             <div class="timeline-grid">
               <!-- LEFT COLUMN -->
               <div class="timeline-column">
-                <div v-for="(job, index) in leftJobs" :key="'left-' + index" class="timeline-item">
+                <h3 class="mb-5">Experience</h3>
+                <div v-for="(job, index) in leftSide" :key="'left-' + index" class="timeline-item">
                   <div class="timeline-marker"></div>
                   <div class="timeline-content">
                     <h3>{{ job.title }}</h3>
@@ -58,7 +59,8 @@
 
               <!-- RIGHT COLUMN -->
               <div class="timeline-column">
-                <div v-for="(job, index) in rightJobs" :key="'right-' + index" class="timeline-item">
+                <h3 class="mb-5">Education</h3>
+                <div v-for="(job, index) in rightSide" :key="'right-' + index" class="timeline-item">
                   <div class="timeline-marker"></div>
                   <div class="timeline-content">
                     <h3>{{ job.title }}</h3>
@@ -92,48 +94,52 @@
 <script>
 import linkedIn from '../assets/images/linkedin.png'
 import gitHub from '../assets/images/GitHub.png'
+import html from '../assets/images/html.png'
+import js from '../assets/images/js.png'
 
 export default {
   name: "JobTimeline",
   data() {
     return {
       jobs: [
-        { title: "Full Stack Developer", description: "I did a 6 month bootcamp with Life Choices academy where I learnt the basics of web development.", year: "Apr 2024 - Sep 2024" },
-        { title: "Mondale High School", description: "I studied at Mondale High School, completed my year matric year with a bachelors pass", year: "2019-2023" },
-        { title: "Web Developer", description: "Developed eCommerce platform.", year: "2021" },
-        { title: "Software Developer", description: "Assisted with bug fixes and testing.", year: "2020" },
-        { title: "Wordpress Developer", description: "Assisted with bug fixes and testing.", year: "2020" },
-        { title: "Entrepreneur", description: "Assisted with bug fixes and testing.", year: "2020" }
+        { title: "Web Developer Assistant", description: "Assisted in developing and optimizing client websites using WordPress, ensuring responsive design, functionality, and alignment with client goals to deliver high-quality user experiences at Big Beard Web Solutions.", year: "May 2025 - July 2025" },
+        { title: "Software Developer", description: "Developed and optimized software solutions using Python and JavaScript, ensuring efficient performance, scalability, and a seamless user experience at Life Choices Studio.", year: "Jan 2025 - Apr 2025" },
+        { title: "Wordpress Developer", description: "Designed and developed responsive WordPress websites, customizing themes and plugins to meet client needs while enhancing functionality and user experience at Life Choices Studio.", year: "Oct 2024 - Jan 2025" },
+        { title: "Entrepreneur", description: "Founded and manage a small business creating and selling handmade satin roses, jewelry, and crochet items, focusing on quality craftsmanship and customer satisfaction.", year: "October 2023 - Present" }
+      ],
+      education:[
+        { title: "Life Choices Academy", description: "At Life Choices Academy, I completed a Full Stack Development Bootcamp that introduced me to the fundamentals of web development. I learned HTML, CSS, and JavaScript, and gained hands-on experience building functional web applications, preparing me for real-world development projects.", year: "Apr 2024 - Sep 2024" },
+        { title: "Mondale High School", description: "At Mondale High School, I focused on Pure Mathematics, Physics, Accounting, and Life Sciences. This curriculum strengthened my logical thinking, analytical abilities, and attention to detail, preparing me for further studies and professional development.", year: "2019-2023" }
       ],
       skills: [
-        { name: "LinkedIn", img: linkedIn },
+        { name: "HTML", img: html },
+        { name: "CSS", img: gitHub },
+        { name: "JavaScript", img: js },
+        { name: "Vue.js", img: linkedIn },
+        { name: "Node.js", img: linkedIn },
+        { name: "MySQL", img: linkedIn },
+        { name: "C#", img: linkedIn },
+        { name: "Unity", img: linkedIn },
+        { name: "Python", img: linkedIn },
+        { name: "Flask", img: linkedIn },
+        { name: "WordPress", img: linkedIn },
+        { name: "Php", img: linkedIn },
+        { name: "SEO", img: linkedIn },
+        { name: "Cypress", img: linkedIn },
         { name: "GitHub", img: gitHub },
-        { name: "Vue", img: linkedIn },
-        { name: "JavaScript", img: linkedIn },
-        { name: "HTML", img: linkedIn },
-        { name: "CSS", img: linkedIn },
-        { name: "WordPress", img: linkedIn },
-        { name: "WordPress", img: linkedIn },
-        { name: "WordPress", img: linkedIn },
-        { name: "WordPress", img: linkedIn },
-        { name: "WordPress", img: linkedIn },
-        { name: "WordPress", img: linkedIn },
-        { name: "WordPress", img: linkedIn },
-        { name: "WordPress", img: linkedIn },
-        { name: "WordPress", img: linkedIn },
-        { name: "WordPress", img: linkedIn },
-        { name: "WordPress", img: linkedIn },
-        { name: "WordPress", img: linkedIn }
+        { name: "Figma", img: linkedIn },
+        { name: "Flutter.js", img: linkedIn },
+        { name: "Vercel", img: linkedIn }
         // ➝ Add as many as you want here
       ]
     };
   },
   computed: {
-    leftJobs() {
-      return this.jobs.filter((_, i) => i % 2 === 0); // even index jobs
+    leftSide() {
+      return this.jobs
     },
-    rightJobs() {
-      return this.jobs.filter((_, i) => i % 2 !== 0); // odd index jobs
+    rightSide() {
+      return this.education
     }
   }
 };
