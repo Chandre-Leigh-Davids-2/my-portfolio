@@ -93,9 +93,23 @@
 
 <script>
 import linkedIn from '../assets/images/linkedin.png'
-import gitHub from '../assets/images/GitHub.png'
 import html from '../assets/images/html.png'
+import CSS from '../assets/images/css.png'
 import js from '../assets/images/js.png'
+import VueJS from '../assets/images/vueJs.png'
+import NodeJS from '../assets/images/NodeJs.png'
+import MySQL from '../assets/images/mysql.png'
+import Csharp from '../assets/images/Csharp.png'
+import Unity from '../assets/images/unity.png'
+import Python from '../assets/images/python.png'
+import Flask from '../assets/images/flask.png'
+import Wordpress from '../assets/images/wordpress.png'
+import SEO from '../assets/images/seo.png'
+import Cypress from '../assets/images/cypress.png'
+import GitHub from '../assets/images/GitHub-logo.png'
+import Figma from '../assets/images/figma.png'
+import Flutter from '../assets/images/lockup_flutter.png'
+import Vercel from '../assets/images/vercel.png'
 
 export default {
   name: "JobTimeline",
@@ -113,23 +127,23 @@ export default {
       ],
       skills: [
         { name: "HTML", img: html },
-        { name: "CSS", img: gitHub },
+        { name: "CSS", img: CSS },
         { name: "JavaScript", img: js },
-        { name: "Vue.js", img: linkedIn },
-        { name: "Node.js", img: linkedIn },
-        { name: "MySQL", img: linkedIn },
-        { name: "C#", img: linkedIn },
-        { name: "Unity", img: linkedIn },
-        { name: "Python", img: linkedIn },
-        { name: "Flask", img: linkedIn },
-        { name: "WordPress", img: linkedIn },
+        { name: "Vue.js", img: VueJS },
+        { name: "Node.js", img: NodeJS },
+        { name: "MySQL", img: MySQL },
+        { name: "C#", img: Csharp },
+        { name: "Unity", img: Unity },
+        { name: "Python", img: Python },
+        { name: "Flask", img: Flask },
+        { name: "WordPress", img: Wordpress },
         { name: "Php", img: linkedIn },
-        { name: "SEO", img: linkedIn },
-        { name: "Cypress", img: linkedIn },
-        { name: "GitHub", img: gitHub },
-        { name: "Figma", img: linkedIn },
-        { name: "Flutter.js", img: linkedIn },
-        { name: "Vercel", img: linkedIn }
+        { name: "SEO", img: SEO },
+        { name: "Cypress", img: Cypress },
+        { name: "GitHub", img: GitHub },
+        { name: "Figma", img: Figma },
+        { name: "Flutter.js", img: Flutter },
+        { name: "Vercel", img: Vercel }
         // ➝ Add as many as you want here
       ]
     };

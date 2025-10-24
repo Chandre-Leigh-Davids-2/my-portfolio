@@ -274,13 +274,15 @@ button.view-cv:hover {
   margin: 2vw;
   border-radius: 25px;
   grid-template-columns: 1fr 6;
+  filter: grayscale(100%);
 }
 .skill:hover {
   transition: 0.18s ease-in-out;
   scale: 1.2;
+  filter: none;
 }
 .skill img {
-  width: 100%;
+  width: 95%;
 }
 .glass {
   background-color: #ffffff30;
