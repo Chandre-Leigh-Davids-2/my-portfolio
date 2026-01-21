@@ -89,6 +89,8 @@
       </div>
     </div>
   </div>
+  <!-- New -->
+   
 </template>
 
 <script>
@@ -116,6 +118,7 @@ export default {
   data() {
     return {
       jobs: [
+        { title: "Full Stack Developer", description: "Assisted in developing a learning Management system for nurses called ProtoCare Academy at ProtoCare", year: "Nov 2025 - Present" },
         { title: "Web Developer Assistant", description: "Assisted in developing and optimizing client websites using WordPress, ensuring responsive design, functionality, and alignment with client goals to deliver high-quality user experiences at Big Beard Web Solutions.", year: "May 2025 - July 2025" },
         { title: "Software Developer", description: "Developed and optimized software solutions using Python and JavaScript, ensuring efficient performance, scalability, and a seamless user experience at Life Choices Studio.", year: "Jan 2025 - Apr 2025" },
         { title: "Wordpress Developer", description: "Designed and developed responsive WordPress websites, customizing themes and plugins to meet client needs while enhancing functionality and user experience at Life Choices Studio.", year: "Oct 2024 - Jan 2025" },
