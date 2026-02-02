@@ -79,11 +79,21 @@
     <div class="" style="padding: 0vw 1vw;">
       <div class="row">
         <div class="col-outer p-5">
-          <h1 class="mont-primary">Skills</h1>
-          <div class="col pt-5 d-flex flex-wrap justify-content-center glass">
-            <div v-for="(skill, index) in skills" :key="index" class="skill col-md-2 mb-3">
-              <img :src="skill.img" :alt="skill.name">
+          <h1 class="mont-primary">Full Stack Arsenal</h1>
+          <h6 class="text-muted" style="color: #4b5563;">A comprehensive overview of the technologies and tools I use to bring digital products to life.</h6>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="glass m-3"></div>
             </div>
+          <div class="col-md-6">
+            <div class="glass m-3"></div>
+          </div>
+          <div class="col-md-6">
+            <div class="glass m-3"></div>
+          </div>
+          <div class="col-md-6">
+            <div class="glass m-3"></div>
+          </div>
           </div>
         </div>
       </div>
