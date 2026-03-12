@@ -40,7 +40,8 @@
     <div class="" style="padding: 0vw 1vw;">
       <div class="row">
         <div class="col p-5">
-          <h1 class="mont-secondary">Education & Experience</h1>
+                    <h1 class="mont-secondary my-3 text-center">Education & Experience</h1>
+
           <div class="col pt-5">
             <!-- Education and Experience Blocks -->
             <div class="timeline-grid">
@@ -135,7 +136,7 @@ export default {
         { title: "Entrepreneur", description: "Founded and manage a small business creating and selling handmade satin roses, jewelry, and crochet items, focusing on quality craftsmanship and customer satisfaction.", year: "October 2023 - Present" }
       ],
       education:[
-        { title: "Life Choices Academy", description: "At Life Choices Academy, I completed a Full Stack Development Bootcamp that introduced me to the fundamentals of web development. I learned HTML, CSS, and JavaScript, and gained hands-on experience building functional web applications, preparing me for real-world development projects.", year: "Apr 2024 - Sep 2024" },
+        { title: "Full Stack Developer Bootcamp", description: "At Life Choices Academy, I completed a Full Stack Development Bootcamp that introduced me to the fundamentals of web development. I learned HTML, CSS, and JavaScript, and gained hands-on experience building functional web applications, preparing me for real-world development projects.", year: "Apr 2024 - Sep 2024" },
         { title: "Mondale High School", description: "At Mondale High School, I focused on Pure Mathematics, Physics, Accounting, and Life Sciences. This curriculum strengthened my logical thinking, analytical abilities, and attention to detail, preparing me for further studies and professional development.", year: "2019-2023" }
       ],
       skills: [

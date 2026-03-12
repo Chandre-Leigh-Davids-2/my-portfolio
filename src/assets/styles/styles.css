@@ -170,7 +170,8 @@ button.view-cv:hover {
   transition: 0.18s ease-in-out;
 }
 .home-image {
-  width: 80%;
+  height: 34rem !important;
+  width: auto;
 }
 .home-paragraph {
   width: 70%;
